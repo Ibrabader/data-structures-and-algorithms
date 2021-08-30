@@ -125,10 +125,14 @@ availableItems=[
   { name: 'blueberries', available: false }
 ]
 const createList = (availableItems) => {
-  availableItems.forEach(function(available) {
-    
-  });
   // Solution code here...
+  let groceryList = [];
+  availableItems.forEach(function(value) {
+      if(value.available === true) {
+        groceryList.push(value.name);
+      }
+  });
+  return groceryList;
 };
 createList(availableItems);
 /* ------------------------------------------------------------------------------------------------
@@ -147,7 +151,26 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
-};
+  let arr2 =[];
+    arr.forEach(function(value) {
+        if(value % 3== 0 && value % 5 == 0){
+            arr2.push('fizzbuzz');        
+        }
+
+      else if(value % 5== 0){
+        arr2.push('buzz');    
+      }
+
+      else if(value % 3== 0){
+        arr2.push('fizz'); 
+        }
+      else {
+        arr2.push(value)
+      }
+ });
+ return arr2;
+ };
+fizzbuzz([3,5,15,9,2]);
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
