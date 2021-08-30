@@ -89,9 +89,14 @@ CHALLENGE 5
 
 Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4, but uses forEach instead of a for loop.
 ------------------------------------------------------------------------------------------------ */
-
+let arrEach =[];
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  arr.forEach(function(value) {
+    arrEach.push(Math.pow(2,value))
+    
+  });
+  return arrEach;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,8 +106,13 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
+  let arrMap = arr.map(value =>{ return Math.pow(2,value)
+  
+  } )
+  return arrMap;
   // Solution code here...
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
