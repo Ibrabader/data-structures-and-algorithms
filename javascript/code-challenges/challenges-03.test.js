@@ -10,11 +10,11 @@ Write a function called addTwo that takes in an array and adds two to every valu
 const addTwo = (arr) => {
   let arrTwo=[];
 for ( i=0 ; i < arr.length ; i++){
-    arr2.push(arr[i]+2)
+    arrTwo.push(arr[i]+2)
 }
 return arrTwo;
 };
-/**** */
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -50,13 +50,12 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
 
-  const filterItems = (arr, query) => {
-    return arr.filter(el => el.toLowerCase().indexOf(query.toLowerCase()) !== -1)
-  }
-  return filterItems 
-  // Solution code here...
+  const andExist = arr.filter((str)=> {
+
+   return (str.includes("and"));
+ })
+  return andExist;
 };
-containsAnd(['panda', 'ran', 'and'])
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -66,7 +65,12 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-  // Solution code here...
+
+  const oddValuesArr = arr.filter((odd) => {
+
+      return ( odd % 2 !== 0);
+  })
+  return oddValuesArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -78,9 +82,12 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
-};
-
+  const notIncludedValues = arr.filter((value) => {
+  
+      return ( arr.includes(value) && (forbiddenValues.includes(value) === false) )
+  })
+      return notIncludedValues;
+  };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
 
