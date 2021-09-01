@@ -6,8 +6,13 @@ CHALLENGE 1 - Review
 Write a function called addTwo that takes in an array and adds two to every value using a for loop. Place the new value in a new array. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
+
 const addTwo = (arr) => {
-  // Solution code here...
+  let arrTwo=[];
+for ( i=0 ; i < arr.length ; i++){
+    arr2.push(arr[i]+2)
+}
+return arrTwo;
 };
 /**** */
 /* ------------------------------------------------------------------------------------------------
@@ -19,9 +24,22 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
-  // Solution code here...
-};
 
+  const numberValues = arr.filter((num)=> {
+
+    return (typeof (num) === 'number')
+  }
+  
+  ) 
+  // Solution code here...
+
+
+  return numberValues;
+
+
+
+
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -31,9 +49,14 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
+
+  const filterItems = (arr, query) => {
+    return arr.filter(el => el.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+  }
+  return filterItems 
   // Solution code here...
 };
-
+containsAnd(['panda', 'ran', 'and'])
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
