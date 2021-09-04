@@ -12,10 +12,15 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
-  // Solution code here...
-};
 
-/* ---------------------------------------------------------------------------------------------------
+  let arrayOfP = people.map (person => { 
+ 
+  return person.firstName + ' ' + person.lastName }
+ 
+ );
+ return arrayOfP;
+ };
+/* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
 Write a function named addValues that, given an array of numbers as input, uses reduce to add the values in the array.
@@ -23,8 +28,14 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-  // Solution code here...
-};
+
+  let SumNum = arr.reduce((accumelator,currentValue) =>{
+  accumelator = accumelator + currentValue;
+      return accumelator;
+
+      },0) 
+return SumNum;
+    };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -39,7 +50,17 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  // Solution code here...
+  let totalPurchase = arr.reduce ((accumelator, value) => {
+ accumelator += value.purchasePrice;
+
+//  console.log ('$' + value.purchasePrice )
+//   console.log ('' + value.purchasePrice )
+
+ return accumelator;
+
+  },0)
+
+  return totalPurchase;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,8 +72,14 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
-};
+  let arrIndexTotal = arr.reduce((accumelator,val) => {
+  
+  accumelator = accumelator + 1;
+  return accumelator;
+       } ,0)
+  return arrIndexTotal;
+  
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -110,9 +137,19 @@ let starWarsData = [{
   gender: 'female'
 }];
 
+
 const returnNames = (arr) => {
-  // Solution code here...
-};
+
+  let starWarsDataNames = arr.reduce( ( accumelator,val) => { 
+  
+  accumelator.push(val.name) ;
+  
+  return accumelator;
+  },[])
+  
+  
+  return starWarsDataNames;
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -123,8 +160,15 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
-};
+  // let reversedWord = str.reduce((acc,val)=> (
+  
+  //     val+acc
+  
+  // ).split(),'')
+  
+  // return reversedWord;
+  
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
