@@ -56,7 +56,25 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-};
+  charArray.sort((a,b) => {
+    if (a.children.length > b.children.length) {
+      return 1;
+    }
+    else if (a.children.length < b.children.length) {
+      return -1;
+    }
+    else{
+      if (a.house.toUpperCase()>b.house.toUpperCase()) {
+        return 1;
+      }
+      if (a.house.toUpperCase()<b.house.toUpperCase()) {
+        return -1;
+      }
+    }
+  });
+  return charArray};
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -66,7 +84,9 @@ Write a function named containsW that takes in a string. This function should us
 ------------------------------------------------------------------------------------------------ */
 
 const containsW = (str) => {
-  // Solution code here...
+  // Solution code here... let toCheck = /.w/;
+  let toCheck = /.w/;
+  return toCheck.test(str);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +102,9 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  // Solution code here...let toCheck = /[0-9]/;
+  let toCheck = /[0-9]/;
+  return toCheck.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -93,7 +115,9 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  // Solution code here...
+  // Solution code here... let toCheck = /.world/;
+  let toCheck = /.world/;
+  return toCheck.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -105,7 +129,11 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  // Solution code here...
+  // Solution code here...let toCheck = /^[A-J]/g;
+  const toCheck = /\b[A-Z]\w*/g;
+  const checked = str.match(toCheck);
+  return checked === null ? [] : checked;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -115,7 +143,15 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  // Solution code here...let toCheck = /^[A-J]/g;
+  let toCheck = /^[A-J]/g;
+  let checked = [];
+  arr.forEach(element => {
+    if (element.match(toCheck) !== null) {
+      checked.push(element);
+    }
+  });
+  return checked;
 };
 
 /* ------------------------------------------------------------------------------------------------
