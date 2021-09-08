@@ -10,6 +10,14 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
+
+let maxiVal= arr.reduce((acc,val)=>{
+   if(acc<val){
+    return acc= val
+   }
+   return acc;
+ },0)
+ return maxiVal;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,6 +34,8 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getCourseKeys = (obj) => {
   // Solution code here...
+  let newArr= Object.keys(obj);
+ return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,6 +48,13 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
+  let test=false;
+  Object.values(obj).forEach(element=>{
+   if(element==value){
+     return test=true;
+   }
+ })
+ return test;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -61,6 +78,11 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let arr=[];
+  Object.entries(obj).forEach(val=>{
+    arr.push(val.join(": "))
+  })
+  return arr;
 };
 
 
@@ -116,7 +138,9 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+ arr.forEach(value=>{
+  houses.push(value.house)
+ })
   return houses;
 };
 
@@ -134,7 +158,13 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-
+  let test3=false;
+  arr.forEach(element=>{
+   if (Object.values(element).length > 3 && element.name===character){
+     return test3=true
+   }
+  })
+return test3
 };
 
 /* ------------------------------------------------------------------------------------------------
