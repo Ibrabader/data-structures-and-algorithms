@@ -21,5 +21,8 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
-table of contents : 
-code challnge 01  
+
+Table of contents |
+------------ | 
+[code challege 01]() | 
+[code challege 02](python/code_challenges/array-insert-shift/README.md) | 
