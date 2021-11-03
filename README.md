@@ -26,4 +26,4 @@ Table of contents |
 ------------ | 
 [code challege 01]() | 
 [code challege 02](python/code_challenges/array-insert-shift/README.md)| 
-[code challege 03](python/code_challenges/array-insert-shift/README.md)| 
+[code challege 03](python/code_challenges/BinarySearch/README.md)| 
