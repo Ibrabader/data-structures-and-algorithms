@@ -1,8 +1,9 @@
-# Reverse an Array
-<!-- Description of the challenge -->
+# Code Challenge 1:
 
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
+## Reverse Array
 
-## Approach & Efficiency
-<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+## Challenge:
+* reverse an array without using the built in methods
+
+## Approach & Methodology:
+<img src="Untitled (2).jpg" >
