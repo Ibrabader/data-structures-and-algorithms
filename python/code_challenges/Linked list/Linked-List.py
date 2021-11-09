@@ -130,3 +130,4 @@ class LinkedList:
 
 
 
+#kkd
