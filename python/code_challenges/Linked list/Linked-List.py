@@ -44,7 +44,7 @@ class LinkedList:
             return result
 
 
-
+#in the class work
 
 
 
