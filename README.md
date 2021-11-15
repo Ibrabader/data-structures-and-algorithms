@@ -23,6 +23,15 @@ To run your tests
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
 Table of contents |
------------- | 
-[code challege 01]() | 
-[code challege 02](python/code_challenges/array-insert-shift/README.md) | 
+------------ |
+[code challege 01]() |
+[code challege 02](python/code_challenges/array-insert-shift/README.md)|
+[code challege 03](python/code_challenges/BinarySearch/README.md)|
+[code challege 04](python/code_challenges/BinarySearch/README.md)|
+[code challege 05](python/code_challenges/BinarySearch/README.md)|
+[code challege 06](python/code_challenges/BinarySearch/README.md)|
+[code challege 07](python/code_challenges/BinarySearch/README.md)|
+[code challege 08](python/code_challenges/BinarySearch/README.md)|
+[code challege 09](python/code_challenges/BinarySearch/README.md)|
+[code challege 10](python/code_challenges/BinarySearch/README.md)|
+[code challege 11](python/code_challenges/stack-queue-pseudo/pesudoClass.jpg)|
