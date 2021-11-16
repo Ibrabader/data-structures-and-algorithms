@@ -51,7 +51,7 @@ class Queue:
     def dequeue(self):
         if self.front is None:
             return None
-        value = self.front.data
+        value = self.front.current
         self.front = self.front.next
         return value
 
@@ -60,7 +60,7 @@ class Queue:
 
     def peek(self):
         if not self.is_empty():
-            return self.front.data
+            return self.front.current
 
 
 

@@ -1,11 +1,15 @@
 # Challenge Summary
-<!-- Description of the challenge -->
-
+-  a Create a class called AnimalShelter which holds only dogs and cats.
+- The shelter operates using a FIFO
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
-
+<img src="Untitled (5).jpg">
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+<br>
+time O(1)
+<br>
+space O(1)
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+``animalShelter = AnimalShelter()
+    dog_1 = Dog("aaa")
+    animalShelter.enqueue(dog_1)``
