@@ -19,3 +19,5 @@ def checker(symbol):
                     return False
         i+=1
     return True
+
+# if __name__ =="__main__"
