@@ -1,4 +1,3 @@
-
 class Node:
     def __init__ (self,current,next=None):
         self.current=current
@@ -62,21 +61,52 @@ class Queue:
         if not self.is_empty():
             return self.front.current
 
+class Cat:
+ def __init__(self,anim_name):
+        self.name=anim_name
+        self.type='cat'
+class Dog:
+    def __init__(self,anim_name):
+        self.name= anim_name
+        self.type='dog'
 
 
+class AnimalShelter:
+    def __init__(self):
+        self.cat=Queue()
+        self.dog=Queue()
 
+    def dequeue(self, pref):
+        if pref == 'cat':
+            if self.cat.is_empty():
+                raise Exception("queue is empty")
+            else:
+                return self.cat.dequeue()
+        elif pref == 'dog':
+            if self.dog.is_empty():
+                raise Exception("queue is empty")
+            else:
+                return self.dog.dequeue()
+        else:
+            None
+    def enqueue(self, animal):
+        if animal.type =='cat':
+            self.cat.enqueue(animal.anim_name)
+            return animal
+        elif animal.type =='dog':
+            self.dog.enqueue(animal.anim_name)
+            return animal
+        else:
+            return ' not dog or cat'
+if __name__ == '__main__':
 
-
-
-
-if __name__ == "__main__":
-    stack = Stack()
-
-    stack.push(1)
-    stack.push(12)
-    stack.push(13)
-    stack.pop()
-    stack.pop()
-    stack.pop()
-    # print(stack.peek())
-    print(stack.isEmpty())
+    animalShelter = AnimalShelter()
+    dog_1 = Dog("aaa")
+    animalShelter.enqueue(dog_1)
+    dog2 = Dog("bbb")
+    dog3 = Dog("ccc")
+    animalShelter.enqueue(dog2)
+print(animalShelter.cat)
+#   print(animalShelter.cat)
+#   print(animalShelter.cat)
+#   print(animalShelter.dog[0])
