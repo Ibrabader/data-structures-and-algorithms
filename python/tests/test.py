@@ -1,5 +1,4 @@
-from stack_queue_brackets.stack_queue_brackets import checker
-
+from ..code_challenges.stack_queue_brackets.stack_queue_brackets import checker
 def test_validate_brackets_one():
   string = "{[]}"
   expected = True
