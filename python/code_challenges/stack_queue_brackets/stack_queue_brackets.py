@@ -20,4 +20,19 @@ def checker(symbol):
         i+=1
     return True
 
-# if __name__ =="__main__"
+
+names=["A","B","C","D","E"]
+def DuckDuckGoose(names,k):
+    position = k-1
+    index =0
+    list_len=len(names)
+    while list_len>1 :
+        index=(position+index)% list_len
+        print(names.pop(index))
+        list_len -=1
+
+
+
+if __name__ =="__main__":
+
+    pass
