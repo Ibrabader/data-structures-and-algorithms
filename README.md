@@ -39,4 +39,5 @@ Table of contents |
 [code challege 13](python/code_challenges/stack_queue_brackets/README.md)|
 [code challege 14]()|
 [code challege 15](python/code_challenges/trees/README.md)|
+[code challege 16](python/code_challenges/tree_max/README.md)|
 
