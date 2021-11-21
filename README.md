@@ -33,7 +33,7 @@ Table of contents |
 [code challege 07](python/code_challenges/BinarySearch/README.md)|
 [code challege 08](python/code_challenges/BinarySearch/README.md)|
 [code challege 09](python/code_challenges/BinarySearch/README.md)|
-[code challege 10](python/code_challenges/BinarySearch/README.md)|
+[code challege 10](python/code_challenges/stack_and_queue/README.md)|
 [code challege 11](python/code_challenges/stack-queue-pseudo/pesudoClass.jpg)|
 [code challege 12](python/code_challenges/stack-queue-animal-shelter/README.md)|
 [code challege 13](python/code_challenges/stack_queue_brackets/README.md)|
