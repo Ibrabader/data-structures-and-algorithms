@@ -42,4 +42,5 @@ Table of contents |
 [code challege 16](python/code_challenges/tree_max/README.md)|
 [code challege 17](python/code_challenges/tree_breadth_first/README.md)|
 [code challege 18](python/code_challenges/tree_fizz_buzz/README.md)|
+[code challege 26](python/code_challenges/Insertion_Sort/README.md)|
 
