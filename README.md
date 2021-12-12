@@ -46,4 +46,5 @@ Table of contents |
 [code challege 27](python/code_challenges/merg_sort/README.md)|
 [code challege 28](python/code_challenges/merg_sort/README.md)|
 [code challege 30](python/code_challenges/hashtable/README.md)|
+[code challege 31](python/code_challenges/hashmap_repeated_word/README.md)|
 
