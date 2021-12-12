@@ -45,4 +45,5 @@ Table of contents |
 [code challege 26](python/code_challenges/Insertion_Sort/README.md)|
 [code challege 27](python/code_challenges/merg_sort/README.md)|
 [code challege 28](python/code_challenges/merg_sort/README.md)|
+[code challege 30](python/code_challenges/hashtable/README.md)|
 
