@@ -1,5 +1,5 @@
 
-from hashtable import HashTable , LinkedList
+from python.code_challenges.hashtable.hashtable import HashTable , LinkedList
 class Node():
     def __init__(self, value=None):
 
@@ -38,23 +38,3 @@ def tree_intersection(tree1 , tree2):
 
 
 
-
-if __name__ == '__main__':
-
-    tree1=binary_tree()
-    tree1.root=Node("A")
-    tree1.root.left=Node("B")
-    tree1.root.right=Node("C")
-    tree1.root.left.left=Node("D")
-    tree1.root.left.right=Node("E")
-    tree1.root.right.left=Node("F")
-
-    tree2=binary_tree()
-    tree2.root=Node("A")
-    tree2.root.left=Node("B")
-    tree2.root.right=Node("k")
-    tree2.root.left.left=Node("r")
-    tree2.root.left.right=Node("x")
-    tree2.root.right.left=Node("m")
-
-    print(tree_intersection(tree1,tree2))
