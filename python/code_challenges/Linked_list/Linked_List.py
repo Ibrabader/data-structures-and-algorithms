@@ -242,7 +242,7 @@ class LinkedList :
             list2_current.next=list2_next
             list1_curent=list1_next
             list2_current=list2_next
-            
+
 
 
     def insert_after_value(self, data_after, data_to_insert):
