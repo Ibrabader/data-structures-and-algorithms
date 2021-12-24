@@ -23,3 +23,4 @@ def test_business_trip():
 
   cities_1_2_3 = [v1,v2,v3]
   assert graph.business_trip(cities_1_2_3) == (True, '$249')
+
