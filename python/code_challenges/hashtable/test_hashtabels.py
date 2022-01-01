@@ -19,3 +19,4 @@ def test_contains_item():
   hash_table = HashTable()
   hash_table.add('hello',15)
   assert hash_table.contains('hello')
+
