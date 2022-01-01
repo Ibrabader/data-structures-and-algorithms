@@ -38,7 +38,7 @@ class binary_tree():
         return repeat
 
 
-    def left_join(first_hash,socund_hash):
+    def left_join_hash(first_hash,socund_hash):
 
         output = []
         for i in first_hash.map:
